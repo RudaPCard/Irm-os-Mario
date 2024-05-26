@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="./icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./icon/favicon-16x16.png">
+    <link rel="manifest" href="./icon/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+    <title>Mario bros</title>
+</head>
+
+<body class="caixa-mae">
+    <div class="mascara-form" onclick="hideForm()"></div>
+
+    <header>
+        <img src="./img/carinha do mario.png" class="logo-header" />
+        <a>Home</a>
+        <a onclick="showForm()">Fale Conosco</a>
+        <a href="./nossos-servicos.html">Nossos Serviços</a>
+    </header>
+
+    <div class="container">
+        <div class="background">
+            <video loop autoplay muted class="conteudo-background ">
+                <source src="./img/video (1).mp4">
+            </video>
+            <!-- <img src="./assets/backgroud.jpeg" class="conteudo-background"/> -->
+            <div class="mascara-video"></div>
+        </div>
+
+        <a href="https://wa.me/5577999674559?text=Preciso+fazer+um+or%C3%A7amento+com+os+irm%C3%A3os+M%C3%A1rio." class="link-whatsapp">
+            <img src="./img/whatsapp.png">
+            </a>
+                
+        <div class="sobre-nos">
+            <img src="./img/the super mario bros.png" class="logo">
+            <p>
+                🔧 Encanadores Mario & Luigi - Resolvendo Seus Problemas Hidráulicos Com Estilo! 🔧
+            </p>
+            <p>
+                Você já se encontrou em uma situação de emergência com encanamento? Vazamentos inesperados, canos
+                entupidos ou torneiras que não param de pingar? Não se preocupe, porque estamos aqui para salvar o dia!
+                Apresentamos a vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!
+            </p>
+            <button onclick="showForm()">Entre em Contato</button>
+        </div>
+
+        <img src="./img/Mario e Luige.webp" class="mario-luigi">
+       
+
+        <form action="https://formcarry.com/s/ajRpfjTV2Ja"
+        method="POST"
+        enctype="multipart/form-data" class="fale-conosco">
+            <input type="text" name="name" placeholder="Seu Nome" required>
+            <input type="email" name="email" placeholder="Telefone" required>
+            <textarea type="text" placeholder="Digite seu problema"></textarea>
+            <button type="submit">Pedir Orçamento</button>
+        </form>
+    </div>
+</body>
+<script src="./script.js"></script>
+
+</html>
