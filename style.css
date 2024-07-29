@@ -17,17 +17,22 @@
     background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
 }
 
-header {
+header {   
+
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 10px;
 }
 
 header a {
-    font-size: 24px;
+    font-size: 18px;
     color: white;
     cursor: pointer;
     text-decoration: none;
+
+    
 }
 
 header a:hover{
@@ -35,8 +40,9 @@ header a:hover{
     transition: 0.5s color ease-in-out;
 }
 .logo-header {
-    height: 80px;
+    
     margin: 20px;
+    height: 60px;
 }
 
 .container {
@@ -81,12 +87,13 @@ button {
     border: 0;
     padding: 10px 0;
     border-radius: 3px;
-    background-color: #C51111;
-    width: 200px;
-    height: 50px;
+    background-color: #C51111;   
     color: white;
     cursor: pointer;
     margin-top: 30px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
 }
 
 button:hover {
@@ -113,18 +120,20 @@ p {
     max-width: 40%;
 }
 
-.fale-conosco {
+.fale-conosco {    
+   
     position: fixed;
     display: flex;
     flex-direction: column;
     background: white;
     padding: 20px;
     border-radius: 10px;
-    gap: 20px;
-    left: -330px;
+    gap: 15px;
+    left: -380px;
     transition: left 1s linear;
     z-index: 4;
-    /* transform: translateX(0); */
+    width: 90%;
+    max-width: 400px;
 }
 
 input {
@@ -143,6 +152,11 @@ textarea {
     padding-left: 10px;
     outline-color: #18D80F;
     padding: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .caixa-principal {
@@ -182,6 +196,44 @@ textarea {
     cursor: pointer;
 }
 
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .sobre-nos {
+        max-width: 90%;
+    }
+    
+    .mario-luigi {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    header a {
+        font-size: 16px;
+    }
+    
+    .logo-header {
+        height: 50px;
+    }
+    
+    .fale-conosco {
+        padding: 10px;
+    }
+    
+    button {
+        width: 100%;
+        height: auto;
+    }
+    
+    .link-whatsapp img {
+        width: 40px;
+        height: 40px;
+    }
+}
     
 
     
